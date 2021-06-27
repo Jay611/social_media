@@ -1,13 +1,13 @@
 import "./online.css";
 
 export default function Online({user}) {
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const S3 = process.env.REACT_APP_S3;
 
   return (
     <li className="rightbarFriend">
       <div className="rightbarProfileImgContainer">
         <img
-          src={PF+user.profilePicture}
+          src={S3+user.profilePicture}
           alt=""
           className="rightbarProfileImg"
         />

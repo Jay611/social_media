@@ -27,7 +27,7 @@ export default function Register() {
         window.location.href = "/";
       }
     } catch (err) {
-      alert(err.response.data.msg);
+      console.log(err);
     }
   };
 

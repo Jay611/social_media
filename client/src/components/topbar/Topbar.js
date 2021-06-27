@@ -9,7 +9,6 @@ import { GlobalState } from "../../GlobalState";
 export default function Topbar() {
   const S3 = process.env.REACT_APP_S3;
   const state = useContext(GlobalState);
-  const [isLogged] = state.userAPI.isLogged;
   const [profile] = state.userAPI.profile;
 
   const logoutUser = async () => {

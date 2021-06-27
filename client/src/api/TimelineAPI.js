@@ -14,7 +14,7 @@ function TimelineAPI(token) {
           });
           setTimeline(res.data);
         } catch (err) {
-          alert(err.response.data.msg);
+          console.log(err);
         }
       };
       getTimeline();

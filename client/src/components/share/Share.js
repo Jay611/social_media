@@ -14,7 +14,6 @@ export default function Share() {
   const state = useContext(GlobalState);
   const [profile] = state.userAPI.profile;
   const [token] = state.token;
-  const [callback, setCallback] = state.timelineAPI.callback;
 
   const S3 = process.env.REACT_APP_S3;
 

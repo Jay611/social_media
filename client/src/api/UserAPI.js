@@ -15,7 +15,7 @@ function UserAPI(token) {
           setIsLogged(true);
           setProfile(res.data);
         } catch (err) {
-          alert(err.response.data.msg);
+          console.log(err);
         }
       };
       getUser();
