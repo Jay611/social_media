@@ -33,8 +33,8 @@ mongoose.connect(
 );
 
 // Routes
-app.use("/api/user", require("./routes/userRouter"));
-app.use("/api/post", require("./routes/postRouter"));
+app.use("/user", require("./routes/userRouter"));
+app.use("/post", require("./routes/postRouter"));
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
